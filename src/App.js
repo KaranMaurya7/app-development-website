@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { Navbar } from './Components/Navbar';
+import { Header } from './Components/Header';
+import { DevelopmentProcess } from './Components/DeveopmentProcess';
+import { Contact } from './Components/Contact';
+import { Services } from './Components/Services';
+import { Footer } from './Components/footer';
+import { Clients } from './Components/Clients';
 
-function App() {
+
+
+
+
+
+export default function App() {
+
+  const [burgerMenu, setBurgerMenu] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <Navbar burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
+      <Header />
+      <Services />
+      <DevelopmentProcess />
+      <Clients/>
+      <Contact />
+      <Footer />
 
-export default App;
+    </>
+  )
+}
