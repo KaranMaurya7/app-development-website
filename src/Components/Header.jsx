@@ -20,7 +20,7 @@ const animatepara = {
 export function Header() {
     return (<>
         <header id='about' className='w-full relative pb-5 z-10 mt-[5.1rem] min-h-[80vh] shadow-md   bg-blue-100'>
-            <div className='h-full w-full m-auto lg:w-[85%] pt-16 flex flex-row  flex-wrap items-center'>
+            <div className='h-full w-full m-auto lg:w-[90%] pt-16 flex flex-row  flex-wrap items-center'>
 
                 <div className='mx-6 z-10 lg:pl-20 lg:w-[50vw] lg:px-6'>
                     <motion.h1

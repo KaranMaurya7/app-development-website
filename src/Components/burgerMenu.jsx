@@ -3,14 +3,14 @@ import { motion } from 'framer-motion'
 
 const animateMenu = {
   initial: {
-    x: -'500', scale: 0.4
+    x: -'500', 
   },
   animate: {
-    x: 0, scale:1,
+    x: 0, 
     transition: { duration: 0.4, opacity: 1 },
 
   },
-  exit: { x: -'500',scale:0.4, opacity: 0 }
+  exit: { x: -'500', opacity: 0 }
 }
 export function BurgerMenu({burgerMenu, setBurgerMenu}) {
     return (<>
